@@ -1,3 +1,4 @@
+import 'package:cep_contacts/core/configs/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,10 +10,16 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: AppTheme.mainTheme,
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: Text(
+            'À noite',
+            style: TextStyle(
+              fontSize: 32,
+            ),
+          ),
         ),
       ),
     );
